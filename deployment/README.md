@@ -1,4 +1,4 @@
-# Docker构建
+# Docker 构建
 
 本地快速部署或线上单机部署参照如下说明
 
@@ -19,11 +19,14 @@ mv .env.example .env
 ```bash
 # 在根目录，执行如下命令
 docker-compose up -d
+
+docker-compose -f docker-compose-deploy.yml up -d
+
 ```
 
 ## 第一次运行
 
-进入django容器初始化数据库`docker exec -it lunar-link-django /bin/bash`
+进入 django 容器初始化数据库`docker exec -it lunar-link-django /bin/bash`
 
 ```bash
 # 执行迁移命令：
@@ -52,9 +55,9 @@ http://localhost:8081
 - rabbitmq: 5672
 - redis: 6379
 
-## MySQL存储
+## MySQL 存储
 
-为了不污染本地开发环境，mysql、rabbitmq、redis使用docker的Volume进行存储。
+为了不污染本地开发环境，mysql、rabbitmq、redis 使用 docker 的 Volume 进行存储。
 
 - mysql: mysql:/var/lib/mysql
 - rabbitmq: rabbitmq:/var/lib/rabbitmq

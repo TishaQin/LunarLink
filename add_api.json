@@ -1,0 +1,50 @@
+{
+    "header": {
+        "header": {},
+        "desc": {}
+    },
+    "request": {
+        "form": {
+            "data": {},
+            "desc": {}
+        },
+        "json": {},
+        "params": {
+            "params": {},
+            "desc": {}
+        },
+        "files": {
+            "files": {},
+            "desc": {}
+        }
+    },
+    "extract": {
+        "extract": [],
+        "desc": {}
+    },
+    "validate": {
+        "validate": [
+            {
+                "equals": [
+                    "status_code",
+                    200,
+                    "默认断言"
+                ]
+            }
+        ]
+    },
+    "variables": {
+        "variables": [],
+        "desc": {}
+    },
+    "hooks": {
+        "setup_hooks": [],
+        "teardown_hooks": []
+    },
+    "name": "获取收款人列表",
+    "url": "/payees",
+    "method": "GET",
+    "times": 1,
+    "nodeId": 1,
+    "project": "1"
+}
